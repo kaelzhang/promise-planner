@@ -26,7 +26,26 @@ $ npm i promise-planner
 ## Usage
 
 ```js
-const promise_planner = require('promise-planner')
+const Planner = require('promise-planner')
+
+const plan = new Planner(
+  ['foo', 'bar', 'baz'],
+  async (...args) => {
+    console.log('args', args)
+    return doSomethingAsync(...args)
+  }
+)
+
+plan.then(() => {
+  console.log('completed')
+})
+
+plan.resolve('foo', 1)
+plan.resolve('bar', 2)
+plan.resolve('baz', 3)
+
+// args [1, 2, 3]
+// completed
 ```
 
 ## License

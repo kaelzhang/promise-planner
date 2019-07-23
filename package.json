@@ -21,7 +21,10 @@
     "url": "git://github.com/kaelzhang/promise-planner.git"
   },
   "keywords": [
-    "promise-planner"
+    "promise-planner",
+    "event-proxy",
+    "event",
+    "planner"
   ],
   "engines": {
     "node": ">= 6"
@@ -44,5 +47,9 @@
     "eslint": "^5.16.0",
     "eslint-plugin-import": "^2.17.2",
     "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "core-util-is": "^1.0.2",
+    "err-object": "^5.1.2"
   }
 }
