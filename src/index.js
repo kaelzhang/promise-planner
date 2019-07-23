@@ -114,6 +114,10 @@ class Planner {
 
     return promise.then(...args)
   }
+
+  catch (callback) {
+    return this.then(() => {}, callback)
+  }
 }
 
 module.exports = Planner

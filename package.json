@@ -1,6 +1,6 @@
 {
   "name": "promise-planner",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Plan multiple named tasks and only resolve after all tasks are marked as done",
   "main": "src/index.js",
   "scripts": {

@@ -46,6 +46,13 @@ test('throw in runner', async t => {
       resolve()
     })
   })
+
+  await new Promise(resolve => {
+    p.catch(err => {
+      t.is(err.message, 'foo')
+      resolve()
+    })
+  })
 })
 
 test('reject before await', async t => {
